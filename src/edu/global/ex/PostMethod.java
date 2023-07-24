@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorld
  */
-@WebServlet("/HelloWorld")
-public class HelloWorld extends HttpServlet {
+@WebServlet("/post")
+public class PostMethod extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloWorld() {
+    public PostMethod() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,8 +36,12 @@ public class HelloWorld extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-		
+//		doGet(request, response);
+		System.out.println("post");
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setContentType("text/html");
+		response.getWriter().println("<h1>Post!</h1>");
+		response.getWriter().close();
 	}
 
 }

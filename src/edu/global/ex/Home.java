@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorld
  */
-@WebServlet("/HelloWorld")
-public class HelloWorld extends HttpServlet {
+@WebServlet("/home")
+public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloWorld() {
+    public Home() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,7 +28,7 @@ public class HelloWorld extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
-		response.getWriter().println("<h1>Hello!</h1>");
+		response.getWriter().println("<h1>Main Page</h1>");
 		response.getWriter().close();
 	}
 
