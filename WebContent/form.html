@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="formEx" method="post">
+		<div>
+			<label>이름: </label>
+			<input type="text" name="name" size="10" />
+		</div>
+		<div>
+			<label>ID: </label>
+			<input type="text" name="id" size="10" />
+		</div>
+		<div>
+			<label>패스워드: </label>
+			<input type="text" name="pw" size="10" />
+		</div>
+		
+		<div>
+			<label>취미: </label>
+			<input type="checkbox" name="hobby" size="10" value="reading" checked="checked"/> 독서
+			<input type="checkbox" name="hobby" size="10" value="cooking"/> 요리
+			<input type="checkbox" name="hobby" size="10" value="running"/> 러닝
+			<input type="checkbox" name="hobby" size="10" value="swiming"/> 수영
+		</div>
+		
+		<div>
+			<input type="radio" name="major" value="kor"> 국문학
+			<input type="radio" name="major" value="eng"> 영문학
+			<input type="radio" name="major" value="math"> 수학과
+			<input type="radio" name="major" value="des" checked="checked"> 디자인
+		</div>
+		
+		<div>
+			<select name="protocol">
+				<option value="http" selected="selected">http</option>
+				<option value="ftp">ftp</option>
+				<option value="tcp/ip">tcp/ip</option>
+				<option value="smtp">smtp</option>
+			</select>
+		</div>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="reset">
+	</form>
+</body>
+</html>
